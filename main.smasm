@@ -1,0 +1,32 @@
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+STB 1           ; Register B = 1
+RTB             ; Retrieve A
+ADD RTA STB     ; A = A + B 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 1 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 1 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 2 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 3 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 5 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+ADD RTA STB     ; A = A + B 
+STA 8 
+RTB             ; Retrieve register A
+SDO             ; Push into stdout
+OUT             ; Print content of stdout
